@@ -6,6 +6,10 @@
     <title>Akshay's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -14,16 +18,20 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="home" class="home-section">
+      <img src="saro.jpg" alt="Akshay's Photo" class="profile-img" />
       <h1>Hello, I'm <span>Akshay</span></h1>
       <p>MCA student passionate about software development and AI.</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
+      <a href="mailto:akshaykgm2000@gmail.com" class="cta-button"
+        >Get in Touch</a
+      >
     </section>
 
     <section id="about" class="about-section">
@@ -43,26 +51,120 @@
     <section id="projects" class="projects-section">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Federated Learning Mini Project</h3>
-        <p>A distributed learning system using TensorFlow and PyTorch.</p>
+        <h3>1. Federated Learning Mini Project</h3>
+        <p>
+          My mini-project focuses on developing defense mechanisms against
+          poisoning attacks in federated learning. In federated learning,
+          multiple participants train a shared model without exposing their
+          local data. However, malicious participants can perform poisoning
+          attacks by injecting harmful updates, compromising the model’s
+          performance or causing biased outputs. This project explores
+          techniques like robust aggregation methods and anomaly detection to
+          identify and mitigate such attacks, ensuring the integrity and
+          reliability of the global model.
+        </p>
+      </div>
+      <div class="project">
+        <h3>
+          2. Predicting Future Poverty Levels Using Socioeconomic Indicators.
+        </h3>
+        <p>
+          As part of my IBM CSRBox SkillsBuild virtual internship, I worked on a
+          project titled "Predicting Future Poverty Levels Using Socioeconomic
+          Indicators." This project aimed to develop predictive models using
+          historical socioeconomic data to anticipate poverty trends and propose
+          actionable solutions aligned with Sustainable Development Goal 1 (No
+          Poverty). Through the use of Python, Scikit-learn, and Tableau, I
+          analyzed key indicators such as GDP, unemployment, and access to
+          education to derive insights that can support data-driven
+          policy-making and poverty alleviation strategies.
+        </p>
+      </div>
+      <div class="project">
+        <h3>3. Personal Portfolio Website</h3>
+        <p>
+          This portfolio site is also a part of my projects assigned to me for
+          internal evaluation,
+        </p>
       </div>
     </section>
 
-    <section id="experience" class="experience-section">
-      <h2>Experience</h2>
-      <p>
-        Completed IBM CSRBox SkillsBuild internship focusing on Data Analytics.
-      </p>
+    <section id="education" class="education-section">
+      <h2>Education</h2>
+      <ul>
+        <li>MCA - Cochin University of Science and Technology (CUSAT), 2025</li>
+        <li>BCA - SNES College Kunnamangalam, 2021</li>
+      </ul>
+    </section>
+    <section id="certifications" class="certifications-section">
+      <h2>Certifications</h2>
+      <div class="certifications-container">
+        <div class="certificate">
+          <h3>
+            <a
+              href="https://www.linkedin.com/posts/tp-akshay_thrilled-to-have-completed-my-data-analytics-activity-7232359506633011200-LZ-k?utm_source=share&utm_medium=member_desktop"
+              target="_blank"
+              >IBM CSRBox SkillsBuild Data Analytics</a
+            >
+          </h3>
+          <p>Earned for completing data analytics tasks and projects.</p>
+        </div>
+        <div class="certificate">
+          <h3>
+            <a
+              href="https://coursera.org/verify/specialization/FBJ6PA6YB2GP"
+              target="blank"
+              >Coursera: Generative AI for Software Developers</a
+            >
+          </h3>
+          <p>Gained hands-on experience building AI models and tools.</p>
+        </div>
+        <div class="certificate">
+          <h3>
+            <a
+              href="https://www.linkedin.com/learning/certificates/f19e0ea83cd8baca670ed1d1a55586df71ae6e3d145eb210f0c570f5ccaca847"
+              target="blank"
+              >Advanced Python: Working with Databases</a
+            >
+          </h3>
+          <p>
+            Completed Python-based data science modules and exercises from
+            LinkedIn Learning.
+          </p>
+        </div>
+        <div class="certificate">
+          <h3>
+            <a
+              href="https://www.linkedin.com/learning/certificates/77fe564ae4721f99af60b674cadae0fefb4738d6996f426cb72034c18409eae1"
+              target="blank"
+            >
+              Essentials in Generative AI by Microsoft and LinkedIn</a
+            >
+          </h3>
+          <p>
+            Offered by Microsoft and LinkedIn, this course covers the
+            fundamentals of Generative AI.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact-section">
       <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <div class="contact-icons">
+        <a href="tel:+919744005241" target="_blank">
+          <i class="fas fa-phone icon"></i>
+        </a>
+        <a href="https://instagram.com/t.p.akshay" target="_blank">
+          <i class="fab fa-instagram icon"></i>
+        </a>
+        <a href="https://linkedin.com/in/tp-akshay" target="_blank">
+          <i class="fab fa-linkedin-in icon"></i>
+        </a>
+        <a href="mailto:akshaykgm2000@gmail.com">
+          <i class="fas fa-envelope icon"></i>
+        </a>
+      </div>
     </section>
 
     <footer>
