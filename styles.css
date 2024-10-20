@@ -79,7 +79,8 @@ section {
 }
 
 /* Projects and Education Sections */
-.projects-section, .education-section {
+.projects-section,
+.education-section {
     background-color: #eee;
     padding: 40px 20px;
     margin-bottom: 20px;
@@ -130,6 +131,7 @@ section {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .certifications-section a {
     color: black; /* Set link color to black */
     text-decoration: none;
@@ -139,6 +141,64 @@ section {
     text-decoration: underline; /* Underline on hover for better visibility */
 }
 
+/* Contact Form */
+.contact-section {
+    max-width: 600px; 
+    margin: 0 auto; /* Center the section */
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px; /* Rounded corners */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex; /* Enable flexbox for layout */
+    justify-content: space-between; 
+}
+
+.form-field {
+    flex: 1; /* Allow fields to grow equally */
+    margin-right: 10px; /* Space between fields */
+}
+
+.form-field:last-child {
+    margin-right: 0; /* Remove margin from last field */
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.thank-you {
+    margin-top: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* Contact Section */
 .contact-section {
@@ -165,7 +225,6 @@ section {
     transform: scale(1.2);
     color: #4CAF50;
 }
-
 
 /* Footer */
 footer {
