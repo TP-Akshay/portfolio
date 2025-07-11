@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Download, Code, Zap, Palette, Menu, X, ArrowUpRight, Circle, Square } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Download, Code, Zap, Palette, Menu, X, ArrowUpRight, Circle } from 'lucide-react';
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -140,13 +140,13 @@ const Portfolio = () => {
           
           <div className="flex justify-center space-x-12">
             {[
-              { icon: Github, label: 'GITHUB' },
-              { icon: Linkedin, label: 'LINKEDIN' },
-              { icon: Mail, label: 'EMAIL' }
+              { icon: Github, label: 'GITHUB',link:"https://github.com/TP-Akshay/" },
+              { icon: Linkedin, label: 'LINKEDIN',link:"https://www.linkedin.com/in/tp-akshay/" },
+              { icon: Mail, label: 'EMAIL',link:"mailto:akshaytp011@gmail.com" }
             ].map((social, index) => (
               <a 
                 key={index}
-                href="#" 
+                href={social.link} 
                 className="group flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors"
               >
                 <social.icon size={24} />
